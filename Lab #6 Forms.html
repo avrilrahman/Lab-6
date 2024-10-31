@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+<body>
+
+ <!-- Navigation Bar -->
+ <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- Contact Form Section -->
+    <div class="form-container">
+        <h1>Contact Avril For Coffee Chats</h1>
+        <form id="contactForm">
+
+            <!-- Single Text Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Multiple Text Field -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <!-- Radio Buttons for Preferred Contact Method -->
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="email" name="contactMethod" value="Email" required>
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="contactMethod" value="Phone" required>
+            <label for="phone">Phone</label><br><br>
+
+             <!-- Checkboxes for Topics of Interest -->
+             <p>Topics of Interest:</p>
+             <input type="checkbox" id="leadership" name="interest" value="Leadership">
+             <label for="leadership">Leadership</label>
+             <input type="checkbox" id="networking" name="interest" value="Networking">
+             <label for="networking">Networking</label>
+             <input type="checkbox" id="strategy" name="interest" value="Strategy">
+             <label for="strategy">Strategy & Planning</label><br><br>
+ 
+             <!-- Dropdown Menu for Position Level -->
+             <label for="position">Your Position Level:</label>
+             <select id="position" name="position" required>
+                 <option value="manager">Manager</option>
+                 <option value="seniorManager">Senior Manager</option>
+                 <option value="director">Director</option>
+                 <option value="executive">Executive</option>
+             </select><br><br>
+ 
+             <!-- Text Input for LinkedIn Profile -->
+             <label for="linkedin">LinkedIn Profile:</label>
+             <input type="text" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn URL"><br><br>
+ 
+             <!-- Text Input for Company/Organization -->
+             <label for="company">Company/Organization:</label>
+             <input type="text" id="company" name="company" required><br><br>
+ 
+             <!-- Submit and Clear Buttons -->
+             <button type="button" onclick="submitForm()">Submit</button>
+             <button type="reset">Clear</button>
+         </form>
+     </div>
+ 
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Avril's Website.</p>
+    </footer>
+
+    <!-- Javascript File Attachment -->
+    <script src="script.js"></script>
+    <script src="scriptclear.js"></script>
+
+</body>
+</html>
